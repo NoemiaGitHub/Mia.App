@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMulti.PageListar" Title="LISTAGEM">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="LISTAGEM DAS PESSOAS" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <ListView x:Name="lsvPessoas" ItemSelected="lsvPessoas_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Horizontal" Margin="10">
+                                    <Label Text="{Binding nome}" TextColor="Blue" FontAttributes="Bold"/>
+                                    <Label Text="{Binding idade}" TextColor="Red" HorizontalOptions="EndAndExpand"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="btnNovo" Text="NOVO" Priority="0" Order="Primary" Clicked="btnNovo_Clicked"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>

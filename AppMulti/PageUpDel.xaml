@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMulti.PageUpDel" Title="ATUALIZAR / APAGAR">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="NOME" FontSize="Medium" FontAttributes="Bold"/>
+            <Entry x:Name="txtNome" Keyboard="Default" Text="{Binding nome, Mode=TwoWay}"/>
+            <Label Text="IDADE" FontSize="Medium" FontAttributes="Bold"/>
+            <Entry x:Name="txtidade" Keyboard="Numeric" Text="{Binding idade, Mode=TwoWay}"/>
+        <StackLayout Orientation ="Horizontal">
+        <Button Text="ATUALIZAR" CornerRadius="20" BackgroundColor="DarkBlue" TextColor="white" FontAttributes="Bold" x:Name="btnAtualizar" Clicked="btnAtualizar_Clicked"/>
+        <Button Text="APAGAR" CornerRadius="20"   BackgroundColor="Green" TextColor="White" FontAttributes="Bold" x:Name="btnapagar" Clicked="btnapagar_Clicked"/>
+        </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMulti.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="BANCO CLOUD MYSQL" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="20">
+            <Button Text="CADASTRAR" BackgroundColor="White" FontAttributes="Bold" x:Name="btnCadastrar" Clicked="btnCadastrar_Clicked"/>
+            <Button Text="LISTAR" BackgroundColor="White" FontAttributes="Bold" x:Name="btnListar" Clicked="btnListar_Clicked"/>
+            <Button Text="FECHAR" BackgroundColor="White" TextColor="Red" FontAttributes="Bold" x:Name="btnFechar" Clicked="btnFechar_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
